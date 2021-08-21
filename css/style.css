@@ -1,9 +1,9 @@
+/* table  */
 table{
-
     border-bottom: 1px solid rgb(219, 219, 219);
 } 
 
-
+/*table hr */
 .total-hr{
     border-top: 2px solid black;
 }
