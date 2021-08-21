@@ -10,8 +10,83 @@
 </head>
 <body>
     
-    
+    <main>
+        <section class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 col-sm-12">
+                    <div>
+                        <img class="img-fluid" width="80%" src="image/mac.png" alt="imac27">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div>
+                        <h1>Customize your Blue 24-inch <br> iMac with Apple M1 Chip.</h1>
+                        <p>Apple M1 Chip with 8-core CPU with 4 performance cores and 4 efficiency <br> cores,7-core GPU,and  16-core neural Engine 8GB unified memory 256GB <br> SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic Keyboard- <br> US English.</p>
+                    </div>
+                    <div class="mt-4">
+                        <p class="fw-bold">Memory</p>
+                        <button id="8gb-memory" type="button" class="btn btn-outline-dark">8GB unified memory</button>
+                        <button id="16gb-memory" type="button" class="btn btn-outline-dark">16GB unified memory</button>
+                    </div>
+                    <div class="mt-4">
+                        <p class="fw-bold">Storage</p>
+                        <button id="256gb-storage" type="button" class="btn btn-outline-dark">256GB SSD Storage</button>
+                        <button id="512gb-storage" type="button" class="btn btn-outline-dark">512GB SSD Storage</button>
+                        <button id="1tb-storage" type="button" class="btn btn-outline-dark">1TB SSD Storage</button>
+                    </div>
+                    <div class="mt-4">
+                        <p class="fw-bold">Choose your delivery option</p>
+                        <button id="free-delivery" type="button" class="btn btn-outline-dark">Friday,Aug 25 FREE Prime Delivery</button>
+                        <button id="paid-delivery" type="button" class="btn btn-outline-dark">Friday,Aug 21 Delivery Charge $20</button>
+                    </div>
+                    
+                    <div class="mt-5 fw-bold w-50">
+                        <table class="table" >
+                            <tbody>
+                                <tr>
+                                    <td>Best Price</td>
+                                    <td>$<span id="best-price">1299</span></td>      
+                                </tr>
+                                <tr>
+                                    <td>Extra Memory Cost</td>
+                                    <td>$<span id="memory-cost">0</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>Extra Storage Cost</td>
+                                    <td>$<span id="storage-cost">0</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery Charge</td>
+                                    <td>$<span id="deliver-charge">0</span></td>
+                                </tr>
+                                <tr class="total-hr">
+                                    <td>Total Price</td>
+                                    <td>$<span id="total-price">1299</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
+                    <!-- add promo code  -->
+                    <div class="w-50">
+                        <p class="mt-4 mb-1">Add Promo Code</p>
+                        <div class="input-group">
+                            <input id="promo" type="text" class="form-control" placeholder="Add Promo Here" aria-label="Add Promo Here" aria-describedby="button-addon2">
+                            <button class="btn btn-danger rounded" type="button" id="button-addon2 promo-btn">Apply</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="mt-3">
+
+                <!-- Add Final Total Cost  -->
+                <div>
+                    <h1 class="d-flex justify-content-center">Total: $<span id="totalCost-afterPromo">1299</span></h1>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
