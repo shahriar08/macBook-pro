@@ -20,7 +20,21 @@ function calculateTotal(){
     document.getElementById('total-price').innerText = TotalPrice;
 } 
 
+document.getElementById('promo-btn').addEventListener('click',function(){
+    const promoInputField = document.getElementById('promo');
+    const promoInput = promoInputField.value;
 
+        if(promoInput == 'stevekaku'){
+            const finalCost = document.getElementById('total-price').innerText;
+            const afterPromoDiscount = finalCost * 0.20;
+            const afterPromoCost = finalCost - afterPromoDiscount;
+            document.getElementById('totalCost-afterPromo').innerText = afterPromoCost;
+            promoInputField.value='';
+        }
+    else{
+        promoInputField.value='';
+    }
+});
 
 
 document.getElementById('8gb-memory').addEventListener('click',function(){
